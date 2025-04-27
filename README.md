@@ -45,6 +45,10 @@ Re-Creating a portfolio website
 - Add portfolio filters
 
 ---
-
+GROUP MEMBERS:
+1. Nelly Maritim
+2. Wesley Mungai
+3. Beian Magare
+4. Sylvia Karanja
 *Licensed under [MIT](LICENSE) • Crafted with ❤️ by G-782_PLP 
 
