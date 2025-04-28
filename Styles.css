@@ -1,0 +1,254 @@
+    /* ===== Base Styles ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  padding-bottom: 15px;
+  margin-top: 0;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #4285F4;
+}
+
+/* ===== Skills Section ===== */
+.skills-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-header h2 {
+  font-size: 2rem;
+  color: #4285F4;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.skills-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Skill Grid Layouts */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.detailed-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Skill Cards */
+.skill-category {
+  padding: 30px 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-item {
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+/* Skill Elements */
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.skill-category h4,
+.skill-item h5 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.skill-category h4 {
+  font-size: 1.2rem;
+}
+
+.skill-item h5 {
+  font-size: 1.1rem;
+}
+
+.skill-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.skill-divider {
+  width: 40px;
+  height: 3px;
+  background-color: #4285F4;
+  margin: 15px auto 0;
+}
+
+/* ===== Biography Section ===== */
+.bio-section {
+  border: 1px solid #eaeaea;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.profile-image-container {
+  flex: 0 0 200px;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bio-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-details {
+  margin-bottom: 15px;
+}
+
+/* ===== Buttons & Links ===== */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #4285F4;
+  color: white;
+  border: 1px solid #4285F4;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #4285F4;
+  border: 1px solid #4285F4;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .detailed-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bio-section {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  
+  .profile-image-container {
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 0 auto 20px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-grid,
+  .detailed-skills {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .skills-header h3 {
+    font-size: 1.3rem;
+  }
+}
